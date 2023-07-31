@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background: linear-gradient(pink,skyblue);
+    color:black;
+}
+
+input[type="file"]#profile-img-upload {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color:pink;
+    transform: scale(1.05);
+}
+label[for="profile-img-upload"] {
+    display: block;
+    max-width:15rem;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color:midnightblue;
+    cursor: pointer;
+    background-color:lightcoral;
+}
+
+#profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom:30 px;
+    color:midnightblue;
+}
+#form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: -10px;
+    background: linear-gradient(pink,skyblue);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#pro-preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: pink;
+}
+
+#pro-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color:lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: red;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color:blue;
+    transform: scale(1.05);
+}
+
+#resume-preview {
+    margin-top: 50px;
+    margin-bottom: 12rem;
+    padding: 30px;
+    background-color: powderblue;
+    border: 1px solid plum;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#resume-preview h2, #resume-preview h3 {
+    color:maroon;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#resume-preview p {
+    line-height: 1.8;
+}
+#email{
+  color:black;
+}
+
+

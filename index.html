@@ -1,0 +1,57 @@
+   <!DOCTYPE html>
+    <html>
+
+    <head>
+      <title>Resume builder</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body><div id="form-container">
+      <h1>Resume Details</h1>
+      
+        <div id="pro-preview" >
+          <div id="pro-picture">
+            <img align="center" id="profile-img" src="" alt="" >
+          </div>
+        </div>
+        <label for="profile-img-upload"  >Profile picture:</label>
+        <input type="file" id="profile-img-upload"  required >
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" pattern="^[a-zA-Z]+ [a-zA-Z]+$" required placeholder="Enter Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Your Email" pattern="^[A-Za-z0-9]+[.|_]?[A-Za-z0-9]+@{1}[A-Za-z0-9]+.com$"  required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter Your Phone"  pattern= "[0-9]{3}[0-9]{3}[0-9]{4}" required>
+
+        <label for="education">Education:</label>
+        <textarea id="education" placeholder=" Enter Your Education Details" required></textarea>
+
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" placeholder="Enter Your Work Experience Details " required></textarea>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" placeholder="Enter Your Skills" required></textarea>
+
+        <label for="projects">Projects:</label>
+        <textarea id="projects" placeholder="Enter Your Projects" required></textarea>
+
+        <label for="certifications">Certifications:</label>
+        <textarea id="certifications" placeholder="Enter Your Certifications" required></textarea>
+
+        <label for="languages">Languages:</label>
+        <textarea id="languages" placeholder=" Enter Your Languages known" required></textarea>
+
+        <button onclick="generateResume()">Generate Resume</button>
+      </div>
+      <div id="resume-preview"></div>
+      </div>
+      <script src="app.js"></script>
+      </div>
+     
+
+    </body>
+
+    </html>
